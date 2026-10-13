@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#main-header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    float: left;
+    font-size: 1.5rem;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+
+.main-nav a:hover {
+    color: #3498db;
+}
+
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.hero-section {
+    text-align: center;
+}
+
+
+.col {
+    float: left;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+
+.service-box, .media-box {
+    background: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.service-box:hover, .media-box:hover {
+    transform: translateY(-5px);
+    background: #e2e8f0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+video, iframe {
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+
+#main-footer {
+    text-align: center;
+    background: #2c3e50;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .services-section .col {
+        width: 31%;
+        margin-right: 3.5%;
+        margin-bottom: 0;
+    }
+    .services-section .col:last-child {
+        margin-right: 0;
+    }
+
+    .multimedia-section .col {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 0;
+    }
+    .multimedia-section .col:last-child {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .logo, .main-nav {
+        float: none;
+        text-align: center;
+    }
+    .main-nav {
+        margin-top: 1rem;
+    }
+    .main-nav a {
+        display: inline-block;
+        margin: 0 0.75rem;
+    }
+}
